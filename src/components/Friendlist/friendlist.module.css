@@ -1,0 +1,16 @@
+.online {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #9e9e9e47;
+    margin: 20px;
+}
+
+.list {
+    list-style: none;
+}
+
+.item {
+    display: flex;
+}
