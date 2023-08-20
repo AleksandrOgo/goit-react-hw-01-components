@@ -1,11 +1,11 @@
-import {
-  StatisticSection,
-  StatisticTitle,
-  StatisticList,
-  StatisticListItem,
-  StatisticLabel,
-  StatisticPercentage,
-} from './Statistics.styled.js';
+// import {
+//   StatisticSection,
+//   StatisticTitle,
+//   StatisticList,
+//   StatisticListItem,
+//   StatisticLabel,
+//   StatisticPercentage,
+// } from './Statistics.styled.js';
 const randColor = () => {
   return (
     '#' +

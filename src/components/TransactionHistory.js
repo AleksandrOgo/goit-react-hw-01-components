@@ -1,10 +1,10 @@
-import {
-  TransactionHistoryTable,
-  TransactionHistoryHead,
-  TableRaw,
-  TransactionHistoryHeader,
-  TableCell,
-} from './TransactionHistory.styled';
+// import {
+//   TransactionHistoryTable,
+//   TransactionHistoryHead,
+//   TableRaw,
+//   TransactionHistoryHeader,
+//   TableCell,
+// } from './TransactionHistory.styled';
 
 export default function TransactionHistory({items}) {
   return (
