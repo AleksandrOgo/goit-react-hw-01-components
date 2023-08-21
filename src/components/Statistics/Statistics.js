@@ -1,11 +1,11 @@
-// import {
-//   StatisticSection,
-//   StatisticTitle,
-//   StatisticList,
-//   StatisticListItem,
-//   StatisticLabel,
-//   StatisticPercentage,
-// } from './Statistics.styled.js';
+import {
+  StatisticSection,
+  StatisticTitle,
+  StatisticList,
+  StatisticListItem,
+  StatisticLabel,
+  StatisticPercentage,
+} from './Statistics.styled.js';
 const randColor = () => {
   return (
     '#' +
@@ -18,19 +18,19 @@ const randColor = () => {
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section>
+    <StatisticSection>
   {title && (
-        <h2>{title}</h2>
+        <StatisticTitle>{title}</StatisticTitle>
       )}
 
-  <ul>
+  <StatisticList>
               {stats.map(({ id, label, percentage }) => (
-                  <li key={id} style={{ backgroundColor: randColor() }}>
-                      <span>{label}</span>
-                      <span>{percentage}%</span>
-    </li>
+                  <StatisticListItem key={id} style={{ backgroundColor: randColor() }}>
+                      <StatisticLabel>{label}</StatisticLabel>
+                      <StatisticPercentage>{percentage}%</StatisticPercentage>
+    </StatisticListItem>
 ))}
-  </ul>
-</section>
+  </StatisticList>
+</StatisticSection>
   )
 }

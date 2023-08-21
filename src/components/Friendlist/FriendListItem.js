@@ -1,14 +1,14 @@
-import style from './friendlist.module.css';
-
+import {FriendItem, FriendStatus, FriendImage, FriendName} from './FriendList.styled'
 export default function FriendListItem({ avatar, name, isOnline }) {
   return (
+
     <>
-      <span
-        className={style.online}
+      <FriendItem><FriendStatus
         style={{ backgroundColor: isOnline ? 'green' : 'red' }}
-      ></span>
-      <img src={avatar} alt={name} width="48" />
-      <p>{name}</p>
+      ></FriendStatus>
+      <FriendImage src={avatar} name={name} width="48" />
+      <FriendName>{name}</FriendName></FriendItem>
+
     </>
   );
 }
